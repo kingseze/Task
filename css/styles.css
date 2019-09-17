@@ -64,26 +64,6 @@ body, html{
     padding-top: 20px;
 }
 
-
-.ILHS img{
-    max-width: 100%;
-    position: relative;
-}
-
-.IRHS img{
-    margin: 2%;
-}
-
-.ACC{
-    font-size: 3rem;
-    font-weight: 600;
-    text-transform: capitalize;
-}
-
-.ACC span{
-    color: #002D46;
-}
-
 .other{
     font-size: 1.2rem;
 }

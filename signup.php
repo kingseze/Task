@@ -69,7 +69,7 @@
             $json = json_encode($temp);
             file_put_contents('data.json',$json);
             fclose($file);
-            header("location:index.html");
+            header("location:index.php");
         }
         function Test_Input($data){
             $data = trim($data);

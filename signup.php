@@ -88,10 +88,10 @@
                 welcome back!
                 </p>
                 <p class="other">
-                to keep connected with us please<br>
+                To keep connected with us please<br>
                 login with your personal info.
                 </p><br>
-                <a href="index.html" class="sign-in">
+                <a href="index.php" class="sign-in">
                     sign in
                 </a>
             </div>

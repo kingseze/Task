@@ -16,6 +16,12 @@ function sanitizeString($var)
 	return $var;
 }
 
+function validEmail($mail) {
+    $mail = preg_match("^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$^",$mail);
+    
+    return $mail;
+}
+
 if (isset($_POST['email'])) {
 
 	$email = sanitizeString($_POST['email']);
@@ -24,12 +30,12 @@ if (isset($_POST['email'])) {
 		$error = "Not all fields were entered<br />";
 	} else {
 		
-		$st = "data.json";
-		$file = file_get_contents($st);
-		$file_data = json_decode($file,TRUE);
-		if ($file_data == "") {
-			$error = "Username or password incorrect, check and try again5544";
+		if (!validEmail($_POST['email'])) {
+			$error = "Invalid Email";
 		} else {
+            $st = "data.json";
+            $file = file_get_contents($st);
+            $file_data = json_decode($file,TRUE);
 			
 			foreach ($file_data as $key => $value) {
 				# code...

@@ -118,7 +118,7 @@
                     </div>   
                     <input type="password" name="password" required  placeholder="Password"><br><br>
                     <button type="submit" name="submit" value= "submit" class="sign-up">sign up</button><br><br>
-                    <span>Already Have An account?</span><a href="index.html">Sign in</a>
+                    <span>Already Have An account?</span><a href="index.php">Sign in</a>
                 </form>
             </div>
 
